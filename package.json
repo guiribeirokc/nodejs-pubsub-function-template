@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-pubsub-function-template",
+  "version": "1.0.0",
+  "description": "### NPM initialisation",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "debug": "node --inspect node_modules/.bin/functions-framework --source=build/src/ --target=index",
+    "watch": "concurrently \"npm run compile -- --watch\" \"nodemon --watch ./build\"",
+    "start:dev": "npx nodemon",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "lint-and-fix": "eslint . --ext .ts --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "@types/node": "^20.2.0",
+    "concurrently": "^8.0.1",
+    "eslint-plugin-shopify": "^35.1.0",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.2.0"
+  }
+}
