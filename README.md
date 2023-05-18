@@ -35,3 +35,19 @@
 `npm install eslint-plugin-shopify -D-dev`
 
 `npm run lint-and-fix`
+
+### Jest
+
+`npm install -D jest typescript`
+
+`npm install -D ts-jest @types/jest`
+
+`npx ts-jest config:init`
+
+`npm test`
+
+### Function
+
+`npm install -D @google-cloud/functions-framework`
+
+`npm install -D @google/events/cloud/storage/v1/StorageObjectData`

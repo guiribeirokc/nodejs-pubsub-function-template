@@ -1,0 +1,11 @@
+steps:
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    args:
+      - gcloud
+      - functions
+      - deploy
+      - recipesByVision
+      - --region=europe-west2
+      - --source=./../src
+      - --trigger-http
+      - --runtime=nodejs18
