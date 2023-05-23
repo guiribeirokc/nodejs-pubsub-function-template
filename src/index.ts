@@ -1,8 +1,6 @@
-class Ingredient {
+import type {HttpFunction} from '@google-cloud/functions-framework/build/src/functions';
 
-}
-
-export const subject = (ingredient: Ingredient) => {
-    console.log(ingredient)
-    return [1,2,3];
-}
+export const helloWorld: HttpFunction = (req, res) => {
+  console.log(res)
+  res.send('Hello, World!');
+};

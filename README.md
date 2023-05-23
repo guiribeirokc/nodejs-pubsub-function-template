@@ -46,8 +46,18 @@
 
 `npm test`
 
-### Function
+### GCP Function
 
 `npm install -D @google-cloud/functions-framework`
 
 `npm install -D @google/events/cloud/storage/v1/StorageObjectData`
+
+### GTS - Google npm tool
+
+`npx gts init`
+
+`npm install @google-cloud/functions-framework`
+
+`npm install @google-cloud/pubsub`
+
+`npm install concurrently nodemon --save-dev`
